@@ -1,0 +1,135 @@
+/*navbar*/
+.navbar {
+    min-height: 70px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    opacity: 0px;
+}
+
+.container-fluid div {
+    display:flex;
+    gap: 30px;
+}
+/*navbar*/
+
+/*first block*/
+/*---------------------Описание----------------------------*/
+.about {
+    padding-top: 45px;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    padding-bottom: 45px;
+}
+
+.blockquote {
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43.88px;
+        letter-spacing: 0.02em;
+    }
+    display: flex;
+    justify-content: center;
+}
+
+.blockquote-footer {
+    p {
+        font-size: 16px;
+        max-width: 340px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+    }
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    h3 {
+        max-width: 165px;
+        max-height: 182px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+    }
+    width: 164px;
+    height: 182px;
+    padding: 30px 0px 0px 0px;
+    gap: 30px;
+}
+
+.pictures {
+    position:relative;
+    overflow: hidden;
+    width: 340px;
+    height: 340px;
+}
+
+.pictures img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 340px;
+    height: 340px;
+    object-fit:cover;
+    border-radius: 40px;
+    box-shadow: 0px 12px 24px 0px rgba(0, 29, 86, 0.2);
+}
+
+/*------------------------Описание--------------------------------*/
+
+/*second block*/
+.title {
+    h2 {
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+    }
+    padding-top: 50px;
+    gap:30px;
+}
+
+.slider-main {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.slider-nav {
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-slide {
+    img {
+        border-radius: 20px;
+    }
+}
+
+img.png-main-750 {
+    display: none;
+}
+
+img.png-nav-165 {
+    display: none;
+}
+
+.prev {
+   display: none !important;
+}
+

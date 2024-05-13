@@ -1,0 +1,101 @@
+
+/*navbar*/
+
+.navbar .navbar-toggler-icon {
+    opacity: 1;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 0, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.05em;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFFFF;
+}
+
+.container-fluid .btn {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*first block*/
+/*---------------------Описание----------------------------*/
+
+.about .description {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blockquote-footer::before {
+    content: none;
+}
+/*------------------------Описание--------------------------------*/
+
+/*----------------------------Преимущества----------------------------*/
+.png {
+    width: 64px;
+    height: 64px;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.column .card {
+    border: none;
+}
+
+.card-body {
+    justify-content: center;
+    display: flex;
+}
+
+/*--------------------------Преимущества------------------------------*/
+
+/*second block*/
+
+.photo-container {
+    background-color: #3C3C3C;
+    margin-top: 20px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.slick-center img {
+    border: 1px solid #FFFFFF;
+}
