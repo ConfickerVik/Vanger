@@ -77,7 +77,7 @@
     height: 340px;
     object-fit:cover;
     border-radius: 40px;
-    box-shadow: 0px 12px 24px 0px rgba(0, 29, 86, 0.2);
+    /*box-shadow: 0px 12px 24px 0px rgba(0, 29, 86, 0.2);*/
 }
 
 /*------------------------Описание--------------------------------*/
