@@ -115,6 +115,7 @@
 <section id="photo-container" class="photo-container">
 
     {% block content %}
+
         <div class="title text-center">
             <h2>Фотографии</h2>
         </div>
@@ -195,6 +196,51 @@
             focusOnSelect: true
         });
     }
+
+    function closeFullscreenGallery() {
+        $('.fullscreen-gallery').fadeOut('fast', function() {
+            $(this).remove();
+        });
+    }
+
+    function openFullscreenGallery(images, index) {
+
+        $('body').append('<div class="fullscreen-gallery"></div>');
+        $('.fullscreen-gallery').fadeIn('fast');
+        var gallery = $('<div class="gallery"></div>').appendTo('.fullscreen-gallery');
+        gallery.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true
+        });
+
+        for (var i = 0; i < images.length; i++) {
+            var slide = $('<div><img src="' + images[i] + '" alt=""></div>');
+            gallery.slick('addSlide', slide);
+        }
+
+        $('.fullscreen-gallery').on('click', '.close-gallery', function() {
+                closeFullscreenGallery();
+        });
+
+        gallery.slick('slickGoTo', index);
+        $('.fullscreen-gallery').append('<button class="close-gallery">Закрыть</button>');
+    }
+
+    $('.fullscreen-gallery').on('click', '.close-gallery', function() {
+        closeFullscreenGallery();
+    });
+
+    $('.slider-main').on('click', '.slick-slide', function() {
+        var images = [];
+        $('.slider-main .slick-slide').each(function() {
+            var image = $(this).find('img').attr('src');
+            images.push(image);
+        });
+        var index = $(this).index();
+        openFullscreenGallery(images, index);
+    });
 
 </script>
 
