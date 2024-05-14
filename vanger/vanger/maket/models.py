@@ -3,17 +3,11 @@ from filer.fields.image import FilerImageField
 
 
 class SliderImage(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=64)
 
-    my_order = models.PositiveIntegerField(
-        default=0,
-        db_index=True,
-        editable=True,
-        blank=False,
-        null=False,
-    )
+    my_order = models.PositiveIntegerField(default=0)
 
-    cover = FilerImageField(related_name="image_covers", null=True, blank=True, on_delete=models.CASCADE)
+    cover = FilerImageField(related_name="image_covers", on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ['my_order']
+        ordering = ['Sort']
