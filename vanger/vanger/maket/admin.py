@@ -8,7 +8,7 @@ from .models import SliderImage
 @admin.register(SliderImage)
 class SliderImageAdmin(SortableAdminMixin, admin.ModelAdmin):
     readonly_fields = ['image_thumb']
-    list_display = ["my_order", "image_thumb",  "name", "cover"]
+    list_display = ["sort", "image_thumb",  "name", "cover"]
 
     def image_thumb(self, obj):
         if obj.cover:
